@@ -47,7 +47,7 @@ class Square:
     @property
     def position(self):
         """Retrieve __position"""
-        return ___self.position
+        return self.__position
 
     @position.setter
     def position(self, value):
@@ -57,3 +57,4 @@ class Square:
                 and value[0] > 0 
                 and value[1] > 0):
             raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
