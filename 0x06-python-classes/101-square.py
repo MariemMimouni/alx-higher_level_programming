@@ -61,7 +61,7 @@ class Square:
 
     def __str__(self):
         """Define __str__ for square"""
-        my_print(self)
+        self.my_print()
 
     def area(self):
         """Returns square area
