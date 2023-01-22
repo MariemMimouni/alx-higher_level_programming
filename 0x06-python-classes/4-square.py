@@ -18,10 +18,12 @@ class Square:
         args: self"""
         return self.__size*self.__size
 
+    @property
     def size(self):
         """ Retrieve __size"""
         return self.__size
 
+    @size.setter
     def size(self, size):
         if not (isinstance(size, int)):
             raise TypeError("size must be an integer")
