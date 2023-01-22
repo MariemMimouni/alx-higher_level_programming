@@ -31,10 +31,11 @@ class Square:
                 and len(value) == 2 
                 and isinstance(value[0], int)
                 and isinstance (value[1], int)
-                and value[0] > 0 
-                and value[1] > 0):
+                and value[0] >= 0 
+                and value[1] >= 0):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
+        elif :
+            self.__position = value
     
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a square
