@@ -41,7 +41,7 @@ class Rectangle:
         """Initialize rectangle
         args: width = 0
         height = 0"""
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -76,4 +76,4 @@ class Rectangle:
     def __del__(self):
         """Called when an instance is deleted"""
         print("Bye rectangle...")
-        number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
