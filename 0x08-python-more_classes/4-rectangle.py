@@ -67,4 +67,4 @@ class Rectangle:
 
     def __repr__(self):
         """repr() a rectangle"""
-        return ('\n'.join(["".join(["#" for i in range(self.__width)]) for j in range(self.__height)]))
+        return ("Rectangle(" + self.__width + ", " + self.__height + ")")
